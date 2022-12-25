@@ -1,8 +1,3 @@
-FROM openjdk
+FROM nginx:alpine
 
-WORKDIR /application 
-
-copy mostafa.java .
-
-CMD javac mostafa.java
-
+COPY index.html /usr/share/nginx/html
